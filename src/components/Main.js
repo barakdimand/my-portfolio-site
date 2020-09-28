@@ -5,7 +5,7 @@ import AboutMe from "./AboutMe";
 import Resume from "./Resume";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import { Content } from "react-mdl";
+// import { Content } from "react-mdl";
 
 const Main = () => {
   return (

@@ -19,43 +19,93 @@ class Projects extends Component {
     this.state = { activeTab: 0 };
   }
 
-  // toggleCategories = () => {
-  //   let { activeTab } = this.state;
-  //   if (activeTab === 0) {
-  //     return (
-  //       <div>
-  //         <h1>0</h1>
-  //       </div>
-  //     );
-  //   }
-  // };
-
   toggleCategories = () => {
     switch (this.state.activeTab) {
       case 0:
         return (
-          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
-            <CardTitle
-              style={{
-                color: "#fff",
-                height: "176px",
-                background:
-                  "url(https://cdn-media-1.freecodecamp.org/images/xn6oqsiP9ZUwYN98Yidh-Obr7UhkAHHqcFvh) center / cover",
-              }}
-            >
-              Welcome
-            </CardTitle>
-            <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              sagittis pellentesque lacus eleifend lacinia...
-            </CardText>
-            <CardActions border>
-              <Button colored>Get Started</Button>
-            </CardActions>
-            <CardMenu style={{ color: "#fff" }}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
+          <div className="projects-grid">
+            {/* Project 1 */}
+            <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+              <CardTitle
+                style={{
+                  color: "#fff",
+                  height: "176px",
+                  background:
+                    "url(https://cdn-media-1.freecodecamp.org/images/xn6oqsiP9ZUwYN98Yidh-Obr7UhkAHHqcFvh) center / cover",
+                }}
+              >
+                React Project #1
+              </CardTitle>
+              <CardText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                sagittis pellentesque lacus eleifend lacinia...
+              </CardText>
+              <CardActions border>
+                <Button href="http://google.com" target="_blank" colored>
+                  Github
+                </Button>
+                <Button colored>CodePen</Button>
+                <Button colored>Live Demo</Button>
+              </CardActions>
+              <CardMenu style={{ color: "#fff" }}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
+            {/* Project 2 */}
+            <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+              <CardTitle
+                style={{
+                  color: "#fff",
+                  height: "176px",
+                  background:
+                    "url(https://cdn-media-1.freecodecamp.org/images/xn6oqsiP9ZUwYN98Yidh-Obr7UhkAHHqcFvh) center / cover",
+                }}
+              >
+                React Project #2
+              </CardTitle>
+              <CardText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                sagittis pellentesque lacus eleifend lacinia...
+              </CardText>
+              <CardActions border>
+                <Button href="http://google.com" target="_blank" colored>
+                  Github
+                </Button>
+                <Button colored>CodePen</Button>
+                <Button colored>Live Demo</Button>
+              </CardActions>
+              <CardMenu style={{ color: "#fff" }}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
+            {/* Project 3 */}
+            <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+              <CardTitle
+                style={{
+                  color: "#fff",
+                  height: "176px",
+                  background:
+                    "url(https://cdn-media-1.freecodecamp.org/images/xn6oqsiP9ZUwYN98Yidh-Obr7UhkAHHqcFvh) center / cover",
+                }}
+              >
+                React Project #3
+              </CardTitle>
+              <CardText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                sagittis pellentesque lacus eleifend lacinia...
+              </CardText>
+              <CardActions border>
+                <Button href="http://google.com" target="_blank" colored>
+                  Github
+                </Button>
+                <Button colored>CodePen</Button>
+                <Button colored>Live Demo</Button>
+              </CardActions>
+              <CardMenu style={{ color: "#fff" }}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
+          </div>
         );
         break;
       case 1:
@@ -93,13 +143,11 @@ class Projects extends Component {
           <Tab>Angular</Tab>
           <Tab>Python</Tab>
         </Tabs>
-        <section>
-          <Grid className="projects-grid">
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
-        </section>
+        <Grid>
+          <Cell col={12}>
+            <div className="content">{this.toggleCategories()}</div>
+          </Cell>
+        </Grid>
       </div>
     );
   }

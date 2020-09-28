@@ -11,7 +11,11 @@ function App() {
         <Layout>
           <Header
             className="header-color"
-            title="Barak Dimands Portfolio"
+            title={
+              <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+                Barak Dimands Portfolio
+              </Link>
+            }
             scroll
           >
             <Navigation>
@@ -22,7 +26,13 @@ function App() {
               <Link to="/contact">Contact</Link>
             </Navigation>
           </Header>
-          <Drawer title="Title">
+          <Drawer
+            title={
+              <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+                Portfolio
+              </Link>
+            }
+          >
             <Navigation>
               <Link to="/">Landing Page</Link>
               <Link to="/resume">Resume</Link>

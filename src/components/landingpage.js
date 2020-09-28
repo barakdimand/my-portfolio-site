@@ -26,8 +26,7 @@ class LandingPage extends Component {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <i className="fab fa-linkedin" aria-hidden="true"></i>
-                  {"LinkedIn"}
+                  <i className="fa fa-linkedin fa-3x" aria-hidden="true"></i>
                 </a>
                 {/* Github */}
                 <a
@@ -35,8 +34,7 @@ class LandingPage extends Component {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <i className="fab fa-github" aria-hidden="true"></i>
-                  {"github"}
+                  <i className="fa fa-github fa-3x" aria-hidden="true"></i>
                 </a>
                 {/* youtube */}
                 <a
@@ -44,8 +42,7 @@ class LandingPage extends Component {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <i className="fab fa-youtube" aria-hidden="true"></i>
-                  {"youtube"}
+                  <i className="fa fa-youtube fa-3x"></i>
                 </a>
               </div>
             </div>

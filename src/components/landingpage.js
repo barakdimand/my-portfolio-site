@@ -1,12 +1,22 @@
 import React, { Component } from "react";
-import { Cell, Grid } from "react-mdl";
+import { Cell, Grid, Switch } from "react-mdl";
 import MainAvatar from "../images/blackNwhiteKite.png";
 
 class LandingPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { ChosenColor: "-instagram" };
+  }
+  switchTheme = () => {
+    const currTheme = this.state.ChosenColor;
+    this.setState({ ChosenColor: currTheme === "" ? "-instagram" : "" });
+    console.log(this.state.ChosenColor);
+  };
+
   render() {
     return (
       <div style={{ width: "100%", margin: "auto" }}>
-        <Grid className="landing-grid">
+        <Grid className={`landing-grid${this.state.ChosenColor}`}>
           <Cell col={12}>
             <img alt="avatar" src={MainAvatar} className="avatar-img" />
             <div className="banner-text">
@@ -43,6 +53,14 @@ class LandingPage extends Component {
                 </a>
               </div>
             </div>
+            <Switch
+              ripple
+              id="switch1"
+              defaultChecked
+              onChange={() => this.switchTheme()}
+            >
+              Ripple switch
+            </Switch>
           </Cell>
         </Grid>
       </div>

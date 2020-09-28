@@ -20,13 +20,19 @@ class Resume extends Component {
             <h4 style={{ color: "gray" }}>Computer Scientist</h4>
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
             <p>
-              I have completed a Computer Science degree at the IDC Herzliya. I
-              have also completed a full service as a special forces combat
-              soldier in the IDF.
+              My name is Barak Dimand and I am a highly motivated computer
+              science graduate looking for my next challenge! I am currently
+              working in a software engineering team at Datorama a Salesforce
+              company here in Tel aviv. I was born and raised in California and
+              moved to Israel about 6 years ago. I am fluent in both English and
+              Hebrew. I saw the Junior Software Developer position at your
+              company and feel I would be a great fit. Attached bellow you will
+              find my CV. I am looking forward to hearing back from you and want
+              to thank you for your time.
             </p>
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
             <h5>Address</h5>
-            <p>Ben Yehuda 26, Tel Aviv Yafo</p>
+            <p>Tel Aviv, Israel</p>
             <h5>Phone</h5>
             <p>+972 (058) 660-7473</p>
             <h5>Email</h5>
@@ -36,7 +42,6 @@ class Resume extends Component {
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
           </Cell>
           <Cell className="resume-right-col" col={7}>
-            <h3>Resume: </h3>
             <img
               src={resumeImg}
               alt="resumeimg"

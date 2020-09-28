@@ -121,3 +121,10 @@
   font-size: 1em;
   padding: 8px;
 }
+
+.resume-right-col {
+  background: #27221f;
+  color: white;
+  padding-left: 2em;
+  padding-top: 2em;
+}

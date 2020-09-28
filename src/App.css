@@ -79,7 +79,8 @@
 }
 
 .avatar-img {
-  height: 200px;
+  border-radius: 50%;
+  height: 300px;
   padding-top: 5em;
 }
 

@@ -29,7 +29,7 @@ class LandingPage extends Component {
                   <i className="fab fa-linkedin" aria-hidden="true"></i>
                   {"LinkedIn"}
                 </a>
-                {/* github */}
+                {/* Github */}
                 <a
                   href="http://google.com"
                   rel="noopener noreferrer"

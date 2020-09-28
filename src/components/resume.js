@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
+import resumeImg from "../images/barak_dimand_resume_img.png";
 
 class Resume extends Component {
   render() {
@@ -15,7 +16,7 @@ class Resume extends Component {
               />
             </div>
 
-            <h2 style={{ paddingTop: "2em" }}>Barak Dimand</h2>
+            <h2>Barak Dimand</h2>
             <h4 style={{ color: "gray" }}>Computer Scientist</h4>
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
             <p>
@@ -35,7 +36,12 @@ class Resume extends Component {
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
           </Cell>
           <Cell className="resume-right-col" col={7}>
-            RESUME BIATCH
+            <h3>Resume: </h3>
+            <img
+              src={resumeImg}
+              alt="resumeimg"
+              style={{ height: "auto", maxWidth: "100%" }}
+            />
           </Cell>
         </Grid>
       </div>

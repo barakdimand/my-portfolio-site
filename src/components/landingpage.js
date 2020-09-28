@@ -19,6 +19,16 @@ class LandingPage extends Component {
                 HTML/CSS | Bootstrap | JavaScript | React | NodeJS | Express |
                 MongoDB
               </p>
+              <div className="social-links">
+                <a
+                  href="http://google.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i className="fab fa-linkedin"></i>
+                  {"LinkedIn Icon "}
+                </a>
+              </div>
             </div>
           </Cell>
         </Grid>

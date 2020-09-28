@@ -28,14 +28,24 @@ class Contact extends Component {
                   <ListItemContent
                     style={{ fontSize: "25px", fontFamily: "Anton" }}
                   >
-                    <i className="fa fa-car"></i> +972 (058) 660-7473
+                    <i className="fa fa-phone-square"></i> +972 (058) 660-7473
                   </ListItemContent>
                 </ListItem>
+
                 <ListItem>
-                  <ListItemContent icon="person">Aaron Paul</ListItemContent>
+                  <ListItemContent
+                    style={{ fontSize: "25px", fontFamily: "Anton" }}
+                  >
+                    <i className="fa fa-envelope"></i> barakdimand6@gmail.com
+                  </ListItemContent>
                 </ListItem>
+
                 <ListItem>
-                  <ListItemContent icon="person">Bob Odenkirk</ListItemContent>
+                  <ListItemContent
+                    style={{ fontSize: "25px", fontFamily: "Anton" }}
+                  >
+                    <i className="fa fa-skype"></i> barak dimand
+                  </ListItemContent>
                 </ListItem>
               </List>
             </div>

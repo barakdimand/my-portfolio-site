@@ -20,13 +20,32 @@ class LandingPage extends Component {
                 MongoDB
               </p>
               <div className="social-links">
+                {/* LinkedIn */}
                 <a
                   href="http://google.com"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <i className="fab fa-linkedin"></i>
-                  {"LinkedIn Icon "}
+                  <i className="fab fa-linkedin" aria-hidden="true"></i>
+                  {"LinkedIn"}
+                </a>
+                {/* github */}
+                <a
+                  href="http://google.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i className="fab fa-github" aria-hidden="true"></i>
+                  {"github"}
+                </a>
+                {/* youtube */}
+                <a
+                  href="http://google.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i className="fab fa-youtube" aria-hidden="true"></i>
+                  {"youtube"}
                 </a>
               </div>
             </div>
